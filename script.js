@@ -76,7 +76,12 @@ const ringBox = document.getElementById("ringBox");
 
 function showRingBox() {
     ringBox.style.display = "block";
-    ringBox.classList.add("show");
+    // Xóa class để reset animation
+    ringBox.classList.remove("show");
+    // Thêm lại class sau một chút để trigger lại animation
+    setTimeout(() => {
+        ringBox.classList.add("show");
+    }, 50);
 }
 
 yesBtn.addEventListener("click", showRingBox);
