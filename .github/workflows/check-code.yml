@@ -1,0 +1,22 @@
+name: Kiểm tra Code HTML/CSS/JS
+
+on:
+  push:
+    branches: [ main ] # Chạy mỗi khi bạn push code vào nhánh main
+
+jobs:
+  check-syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lấy code mới nhất về máy ảo
+        uses: actions/checkout@v4
+
+      - name: Cài đặt Node.js (để chạy công cụ test)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Kiểm tra cú pháp HTML
+        run: |
+          npm install -g htmlhint
+          htmlhint "**.html"

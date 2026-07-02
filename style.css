@@ -45,7 +45,7 @@ h1 {
 button {
     margin: 10px;
     padding: 10px 20px;
-    font-size: 1.2em;
+    font-size: 4.2em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -87,16 +87,16 @@ button {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 4.5em;
+        font-size: 6.5em;
     }
 
     button {
-        font-size: 4em;
+        font-size: 8em;
         padding: 8px 16px;
     }
 
     #ringBox img {
-        width: 450px;
+        width: 750px;
     }
 
     #fireworks {
