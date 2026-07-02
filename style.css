@@ -30,7 +30,7 @@ body {
 
 h1 {
     color: #ffffff;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     opacity: 0;
     transition: opacity 2s ease-in-out;
@@ -45,7 +45,7 @@ h1 {
 button {
     margin: 10px;
     padding: 10px 20px;
-    font-size: 4.2em;
+    font-size: 2.2em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -53,12 +53,12 @@ button {
 
 #ringBox {
     display: none;
-    margin-top: 20px;
+    margin-top: 50px;
     z-index: 10;
 }
 
 #ringBox img {
-    width: 200px;
+    width: 400px;
     height: auto;
     opacity: 0;
     transform: scale(0.5);
@@ -95,6 +95,10 @@ button {
         padding: 8px 16px;
     }
 
+    #ringBox {
+        margin-top: 20px;
+    }
+    
     #ringBox img {
         width: 750px;
     }

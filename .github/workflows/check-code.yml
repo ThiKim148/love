@@ -2,7 +2,9 @@ name: Kiểm tra Code HTML/CSS/JS
 
 on:
   push:
-    branches: [ main ] # Chạy mỗi khi bạn push code vào nhánh main
+    branches: [ main, dev ] # Chạy khi push vào cả main và dev
+  pull_request:
+    branches: [ main ]      # Chạy khi bạn tạo Pull Request để gộp code vào main
 
 jobs:
   check-syntax:
